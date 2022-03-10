@@ -22,7 +22,7 @@ TEST DE LA DEMO/
 ----> PROCEDURE D'INSTALLATION
 
 -installation de python(3.0)
--installation des packages (Kivy, kivymd, plyer, opencv, pyttsx3, etc...)
+-installation des packages (Kivy, kivymd, plyer, opencv, pyttsx3, etc...) ------> python -m pip install -r requirements.txt
 -Telechargement du Modele d'entrainement YoloV4.weights ------> https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa05ZZVpXTC11QjdJR254eTVOSW81dUdSbVhnQXxBQ3Jtc0tubm5PNkNpNHYtS3N6N1YxcUNuVmJXNTJpSWgyZkQ1bjgzSjQyWWJHVGM2b2NXYkJWb2c1clR3Q3gyRlRPb0hOYm96YTBMaTFzb2NoVm1UYmVVb3dSblZmWkpoRElNUWpnUE1tVEQxblpISWNTd21ZMA&q=https%3A%2F%2Fgithub.com%2FAlexeyAB%2Fdarknet%2Freleases%2Fdownload%2Fdarknet_yolo_v3_optimal%2Fyolov4.weights
 
 -fichier de configuration yolov4 ----> https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa3RxRDRsUk1fb2U0Z1JQTUlDTmtYaDJ2ZkJJZ3xBQ3Jtc0traU83b0Vma0hKNGktTUNfdFl2Y0kyYTI3TFh5MjZneFd5R2x3eGxwVmFYVHJreV9oTjZlRDBWQ3ZQYTg2ekNpelg4aDBYYmh3cnZuOV9DU3Vnbi1xZHN2Wnk5SG5nTVQ2WjhrZGNTRjNSa2xNSDN5aw&q=https%3A%2F%2Fgithub.com%2FAlexeyAB%2Fdarknet%2Freleases%2Fdownload%2Fdarknet_yolo_v3_optimal%2Fyolov4.cfg
