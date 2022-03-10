@@ -31,8 +31,22 @@ TEST DE LA DEMO/
 Tutoriel:
 
 -----> Lancer l'application: python main.py
+![Capture1](https://user-images.githubusercontent.com/84296565/157692989-08ae4e7f-7b6b-4602-8be4-7b38c13f7a8b.PNG)
 
 
+----> Page Accueil
+![capture2](https://user-images.githubusercontent.com/84296565/157693153-e8c0df3e-cc54-41c8-9fad-5679cef08d31.PNG)
 
 
+-----> Detection animaux
+![capture3](https://user-images.githubusercontent.com/84296565/157693309-8c732537-73d5-487b-859b-4d8ec6921b5d.PNG)
 
+
+-----> Text TOo Speech
+![capture4](https://user-images.githubusercontent.com/84296565/157693435-7c19303e-4189-4910-a873-589936d3ebab.PNG)
+
+
+NB: une copie du fichier yolov4.weights est necessaire depuis le repertoire /.../yolo_detection.
+
+Insuffissance: Probléme de buggs lors de la fermeture de la WEBCAM, fermeture de la fenêtre de detection d'objets via yolo.
+buggs à pallier dans les jours à venir.
