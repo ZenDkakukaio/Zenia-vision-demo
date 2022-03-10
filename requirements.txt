@@ -1,0 +1,11 @@
+#pip install -r requirements.txt
+
+# Base ----------------------------------------
+kivy>=2.0.0
+kivymd>=0.104.2
+opencv-python>=4.5.5.62
+Pillow>=9.0.1
+pyttsx3>=2.90
+vosk>=0.3.32
+sounddevice>=0.4.4
+WMI>=1.5.1
