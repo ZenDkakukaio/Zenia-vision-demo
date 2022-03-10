@@ -1,0 +1,36 @@
+{
+  "sport0":
+  {
+    "s0": "media/img test/sport/s0.png"
+  },
+
+  "sport1":
+  {
+    "s1": "media/img test/sport/s1.png"
+  },
+
+  "sport2":
+  {
+    "s2": "media/img test/sport/s2.png"
+  },
+
+  "sport3":
+  {
+    "s3": "media/img test/sport/s3.png"
+  },
+
+  "sport4":
+  {
+    "s4": "media/img test/sport/s4.png"
+  },
+
+  "sport5":
+  {
+    "s5": "media/img test/sport/s5.png"
+  },
+
+  "sport6":
+  {
+    "s6": "media/img test/sport/s6.png"
+  }
+}

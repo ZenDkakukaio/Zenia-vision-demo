@@ -1,0 +1,63 @@
+{
+  "image":
+  {
+    "avatar1": "media/img/new zenia logo.png"
+  },
+
+    "image1":
+  {
+    "avatar2":"media/img/profil.PNG"
+  },
+
+    "image2":
+  {
+    "avatar3": "media/img/eyes4.png"
+  },
+
+    "image3":
+  {
+    "avatar4": "media/img/eyes5.png"
+  },
+
+    "image4":
+  {
+    "avatar5": "media/img/zen_ia.png"
+  },
+  "icon":
+  {
+    "avatar6":"media/img/new zenia logo.ico"
+  },
+  "image5":
+  {
+    "avatar7": "media/img/traduction.jpg"
+  },
+  "image6":
+  {
+    "avatar8": "media/img/race.jpg"
+  },
+  "image7":
+  {
+    "avatar9": "media/img/animaux.jpg"
+  },
+
+   "image9":
+  {
+    "avatar11": "media/img/sport.jpg"
+  },
+   "image10":
+  {
+    "avatar12": "media/img/vegetaux.jpg"
+  },
+
+  "model1":
+  {
+    "model_face_detection":  "media/model/haarcascade_frontalface_default.xml"
+  },
+
+  "bg":
+  {
+    "bg1": "media/img/bg1.PNG"
+  }
+
+
+}

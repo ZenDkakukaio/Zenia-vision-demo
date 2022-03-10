@@ -1,0 +1,56 @@
+{
+  "file_test0":
+  {
+    "file0": "media/img test/animaux/file0.png"
+  },
+
+   "file_test1":
+  {
+    "file1": "media/img test/animaux/file1.png"
+  },
+
+   "file_test2":
+  {
+    "file2": "media/img test/animaux/file2.png"
+  },
+
+   "file_test3":
+  {
+    "file3": "media/img test/animaux/file3.png"
+  },
+
+   "file_test4":
+  {
+    "file4": "media/img test/animaux/file4.png"
+  },
+
+   "file_test5":
+  {
+    "file5": "media/img test/animaux/file5.png"
+  },
+
+   "file_test6":
+  {
+    "file6": "media/img test/animaux/file6.png"
+  },
+
+   "file_test7":
+  {
+    "file7": "media/img test/animaux/file7.png"
+  },
+
+   "file_test8":
+  {
+    "file8": "media/img test/animaux/file8.png"
+  },
+
+   "file_test9":
+  {
+    "file9": "media/img test/animaux/file9.png"
+  },
+
+   "file_test10":
+  {
+    "file10": "media/img test/animaux/file10.png"
+  }
+}
