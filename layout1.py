@@ -41,6 +41,7 @@ from PIL import Image as Image_PIL
 from tkinter import *
 from tkinter import filedialog
 import pyttsx3
+import sys
 
 #integration de l'algorithme de detection des objets
 from yolo_detection import My_Yolo_Detection
@@ -53,7 +54,7 @@ obj_detect = My_Yolo_Detection()
 
 obj = MDApp()
 
-with open('media/file json/file.json') as f:
+with open("media/file json/file.json") as f:
     data = js.load(f)
 
 
@@ -329,8 +330,69 @@ class MyLayout1(ScreenManager):
 
     def speak(self, text_write):
         engine_voice = pyttsx3.init('sapi5')
-        engine_voice.say(text_write)
-        engine_voice.runAndWait()
+        list_service = ["Vous avez validé les services youtube, vous serez redirigé vers le site youtube.com",
+                             "Vous avez validé les services de messagerie vous serez renvoyé vers le support google",
+                             "vous avez validé les services facebook, vous serez renvoyer vers le site facebook.com",
+                             "vous avez validé les services twitter, vous serez renvoyé vers le site twitter.com",
+                             "vous voulez ouvrir un fichier pour le traiter, vous serez renvoyé vers l'explorateur de fichier"]
+        if "youtube" in text_write:
+            engine_voice.say(list_service[0])
+            engine_voice.runAndWait()
+            toast("Lancement de la plateforme youtube")
+            path_youtube = "https://www.youtube.com"
+            webbrowser.open_new(path_youtube)
+
+
+        elif "mail" in text_write:
+            engine_voice.say(list_service[1])
+            engine_voice.runAndWait()
+            toast("Lancement de la plateforme de message électronique")
+            path_mail = "https://mail.google.com"
+            webbrowser.open_new(path_mail)
+
+        elif "facebook" in text_write:
+            engine_voice.say(list_service[2])
+            engine_voice.runAndWait()
+            toast("Lancement de la plateforme facebook")
+            path_facebook = "https://facebook.com"
+            webbrowser.open_new(path_facebook)
+
+        elif "twitter" in text_write:
+            engine_voice.say(list_service[3])
+            engine_voice.runAndWait()
+            toast("Lancement de la plateforme twitter")
+            path_twitter = "https://twitter.com"
+            webbrowser.open_new(path_twitter)
+
+        elif "pdf" or "word" or "excel" or "classeur" or "text" or "fichier" in text_write:
+            engine_voice.say(list_service[4])
+            engine_voice.runAndWait()
+            toast("Ouverture de l'explorateur de fichier...")
+            fen = Tk()
+            fen.title("Recherche de documents...")
+            fen.geometry("500x1+50+100")
+            fen.resizable(width=False, height=False)
+            i1 = tkinter.PhotoImage(file="media/img/new zenia logo.png")
+            fen.iconphoto(False, i1)
+
+            file = filedialog.askopenfilename(initialdir="/",
+                                                         title="Sélectionner le fichier",
+                                                         filetypes=(("Fichier Texte", "*.txt"),
+                                                                    ("Fichier pdf", "*.pdf"),
+                                                                    ("Fichier Word", "*.docx"),
+                                                                    ("Fichier Excel", "*.xlsx"),
+                                                                    ("Tous les fichiers", "*.*")
+                                                                    ))
+            toast(file)
+            os.popen(file)
+            fen.mainloop()
+            sys.exit(0)
+
+        else:
+            engine_voice.say("désolé nous ne gérons pas ce type de service pour le moment")
+            engine_voice.runAndWait()
+
+
 
 
 
@@ -371,7 +433,9 @@ class MyLayout1(ScreenManager):
                                                                   ))
         print(filename_animal)
         obj_detect.detect_(filename_animal)
+
         fen.mainloop()
+        sys.exit(0)
 
 
 
@@ -397,6 +461,7 @@ class MyLayout1(ScreenManager):
         print(filename_sport)
         obj_detect.detect_(filename_sport)
         fen.mainloop()
+        sys.exit(0)
 
 
 
@@ -417,6 +482,7 @@ class MyLayout1(ScreenManager):
         print(filename_other)
         obj_detect.detect_(filename_other)
         fen.mainloop()
+        sys.exit(0)
 
 
 
@@ -537,6 +603,7 @@ class MyLayout1(ScreenManager):
         layout_camera1.remove_widget(self.label)
 
         layout_camera1.opacity = 0
+        sys.quit(0)
 
 
 
@@ -1087,7 +1154,7 @@ class Windows_menu(MDScreen):
 
 
     def get_url_github(self):
-        path_1 = "https://github.com/ZenDkakukaio/python_lab1"
+        path_1 = "https://github.com/ZenDkakukaio/Zenia-vision-demo/"
         webbrowser.open_new(path_1)
 
 
@@ -1097,7 +1164,7 @@ class Windows_menu(MDScreen):
 
 
     def get_url_twitter(self):
-        path_3 = "https://twitter.com/i/connect_people"
+        path_3 = "https://twitter.com/home"
         webbrowser.open_new(path_3)
 
 
